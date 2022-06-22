@@ -314,7 +314,7 @@ body {
   height: 70px;
   padding: 27px 82px;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -858,15 +858,15 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: calc(23 / 20);
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
 }
 
-.modal-field:not(:last-child) {
-  margin-bottom: 10px;
+.modal-field:not(:first-child) {
+  margin-top: 10px;
 }
 
 .input-wrap {
@@ -929,7 +929,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -987,7 +987,7 @@ body {
   color: var(--accent-blu-color);
   align-items: center;
   display: flex;
-  margin-left: 2px;
+  margin-left: 4px;
 }
 
 .submit-btn {
